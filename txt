@@ -1,0 +1,60 @@
+<div class="aboutme">
+    <div class="hr">
+        <h1 class="a-me">About Me
+            <hr>
+        </h1>
+        <br>
+    </div>
+    <div class="intro1">
+        <h1 class="intro">short introduction about myself</h1>
+    </div>
+    <br>
+
+</div>
+<div class="aboutme">
+    <div class="intro1">
+        <h1 class="intro">Let's Be Friend</h1>
+
+    </div>
+    <br>
+    <p> If you want to make friends or get know me better, please visit my social media below.</p>
+    <div class="items">
+        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+        <a href=""><i class="fa-brands fa-telegram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p><strong>Email :</strong> fadlimuham@gmail.com</p>
+    <p><strong>Phone :</strong> +6281343955979</p>
+</div>
+
+<div class="skill">
+
+    <p class="skil">I'm currently learning several programming languages, namely</p>
+    <br>
+    <hr>
+    <br>
+
+    <span class="item">
+        <div class="con">
+            <i class="fa-brands fa-python"></i>
+            <div class="name">Python</div>
+        </div>
+
+        <div class="con">
+            <i class="fa-brands fa-js"></i>
+            <div class="name">Java Script</div>
+        </div>
+
+        <div class="con">
+            <i class="fa-brands fa-php" class></i>
+            <div class="name">Hypertext <br> Preprocessor</div>
+        </div>
+
+
+
+
+    </span>
+
+
+</div>
