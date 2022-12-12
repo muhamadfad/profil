@@ -166,6 +166,7 @@ nav ul li a {}
 .aboutme h1 {
     text-align: justify;
     line-height: 80px;
+    font-family: 'Inter';
 }
 
 
@@ -317,6 +318,10 @@ div .name {
         padding-top: 60px;
 
 
+    }
+
+    .aboutme {
+        padding: 0;
     }
 }
 
