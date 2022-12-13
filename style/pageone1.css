@@ -147,10 +147,7 @@ nav ul li a {}
     color: rgb(26, 88, 69);
 }
 
-.container-aboutme {
-    margin: 0;
-    padding: 20px;
-}
+
 
 .aboutme {
     text-align: justify;
@@ -312,6 +309,11 @@ div .name {
         padding: 0;
     }
 
+    .container-aboutme {
+        margin: 0;
+        padding: 10px;
+    }
+
     .container3 {
 
         padding: 20px;
@@ -402,7 +404,10 @@ div .name {
 
 @media screen and (min-width: 960px) {
 
-
+    .container-aboutme {
+        margin: 0;
+        padding: 20px;
+    }
 
     .cont3 .first p {
         color: rgb(22, 22, 22);
