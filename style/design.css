@@ -91,6 +91,15 @@ nav ul li a {}
     -o-border-radius: 3px;
 }
 
+.view a {
+    color: black;
+    text-decoration: none;
+}
+
+.bt :hover {
+    background-color: rgb(207, 231, 233);
+}
+
 .copyright {
     padding: 20px;
     background-color: rgb(19, 114, 124);
