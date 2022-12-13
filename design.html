@@ -80,28 +80,3 @@
 <script src="script/app.js"></script>
 
 </html>
-<? php
-error_reporting(0);
-
-    $nama = $_POST['name'];
-    $email = $_POST['email'];
-    $pesan = $_POST['message'];
-
-    /* $con = variable yang akan digunakan untuk koneksi
-    database dan untuk mengeksekusi perintah sql */
-    $con = mysqli_connect("localhost", "root", ""); //koneksi ke mysql 
-    mysqli_select_db($con, "db_profil");       //koneksi ke database
-    if ($_POST['masuk']) {
-        $sql = "INSERT INTO pesan (nama,email,pesan)
-        VALUES('$nama', '$email', '$pesan')";
-        mysqli_query($con, $sql); /// eksekusi perintah sql
-    }
-
- ?>
-<script>
-    window.addEventListener("load", function () {
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
-    });
-</script>
