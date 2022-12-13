@@ -166,7 +166,6 @@ nav ul li a {}
 .aboutme h1 {
     text-align: justify;
     line-height: 80px;
-    font-family: 'Inter';
 }
 
 
@@ -207,6 +206,10 @@ nav ul li a {}
 .icon {
     border-left: 1px beige solid;
 }
+
+
+
+
 
 .container3 {
     background: rgb(243, 252, 250);
@@ -305,12 +308,6 @@ div .name {
 }
 
 @media screen and (max-width:560px) {
-    .container3 {
-
-        padding: 20px;
-
-    }
-
     .pic-3 {
 
 
@@ -318,10 +315,6 @@ div .name {
         padding-top: 60px;
 
 
-    }
-
-    .aboutme {
-        padding: 0;
     }
 }
 
@@ -460,6 +453,7 @@ div .name {
 
 .container6 {
     display: flex;
+
     justify-content: center;
     padding: 30px;
     background: rgb(209, 252, 239);
@@ -658,20 +652,7 @@ h1 {
 
     .item i {
         font-size: 20px;
-        margin: 10px;
-
-    }
-
-    .container_form {
-        padding: 0;
-    }
-
-
-    .container6 {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-
+        margin: 20px;
 
     }
 
