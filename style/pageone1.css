@@ -308,6 +308,16 @@ div .name {
 }
 
 @media screen and (max-width:560px) {
+    .aboutme {
+        padding: 0;
+    }
+
+    .container3 {
+
+        padding: 20px;
+
+    }
+
     .pic-3 {
 
 
