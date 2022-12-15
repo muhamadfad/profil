@@ -109,11 +109,11 @@ nav ul li a {}
 
 @media screen and (max-width:560px) {
     .container2 h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .design h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .design {
@@ -148,6 +148,16 @@ nav ul li a {}
 }
 
 
+.pic1 {
+    margin: 20px;
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.633);
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
 
 .pic2 {
     width: 200px;
@@ -178,21 +188,41 @@ nav ul li a {}
         justify-content: center;
     }
 
+    .pic1 {
+        width: 500px;
+    }
+
 
 }
 
 @media screen and (max-width:560px) {
     .designs p {
         padding: 10px;
+        font-size: 14px;
+
 
     }
+
+    .designs h2 {
+        font-size: 19px;
+    }
+
+    .designs h3 {
+        font-size: 16px;
+    }
+
+    .pic1 {
+        max-width: 280px;
+    }
+
+
 
     .ul,
     .ol {
         font-weight: 350;
         text-align: justify;
         padding: 10px;
-        font-size: 18px;
+        font-size: 14px;
     }
 
 }
