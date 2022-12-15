@@ -49,7 +49,7 @@ nav ul li a {}
     line-height: 100px;
 }
 
-.container2 p {
+.design p {
     padding: 20px;
     font-size: 18px;
     font-weight: 350;
@@ -106,6 +106,7 @@ nav ul li a {}
     text-align: center;
 }
 
+
 @media screen and (max-width:560px) {
     .container2 h1 {
         font-size: 25px;
@@ -131,4 +132,67 @@ nav ul li a {}
         width: 500px;
     }
 }
- 
+
+/* Design- One style css*/
+.ul,
+.ol {
+    font-weight: 350;
+    text-align: justify;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.ol li,
+.ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.pic2 {
+    width: 200px;
+    margin: 20px;
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.633);
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+
+.designs p {
+
+    font-size: 18px;
+    font-weight: 350;
+}
+
+@media screen and (min-width:960px) {
+    .designs p {
+        padding: 20px;
+
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width:560px) {
+    .designs p {
+        padding: 10px;
+
+    }
+
+    .ul,
+    .ol {
+        font-weight: 350;
+        text-align: justify;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+}
