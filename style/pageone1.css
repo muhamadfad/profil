@@ -84,6 +84,7 @@ body {
 
 }
 
+
 nav ul li a {}
 
 .text {
@@ -153,8 +154,11 @@ nav ul li a {}
 }
 
 .container-aboutme {
+    font-family: 'Inter';
     background: rgb(225, 252, 255);
     color: rgb(26, 88, 69);
+    font-size: 15px;
+    font-weight: 300;
 }
 
 
@@ -565,8 +569,18 @@ textarea {
 
 h1 {
     text-align: center;
+    font-family: 'Inter';
+    margin-bottom: 20px;
 }
 
+hr {
+    border-color: #626262;
+
+    height: 10px;
+    border-bottom: #182525;
+    border-left: #182525;
+    border-right: #182525;
+}
 
 .galerybox {
 
@@ -694,8 +708,4 @@ h1 {
     }
 
 
-}
-
-hr {
-    border-color: #182525;
 }
