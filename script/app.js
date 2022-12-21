@@ -28,3 +28,29 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+
+
+const navCont = document.getElementById("navCont");
+
+// buat function scroll
+function scroll() {
+  let calc = window.scrollY;
+  if (calc > 0) {
+    navCont.classList.replace("container", "container-scroll");
+
+
+  } else if (calc <= 0) {
+    navCont.classList.replace("container-scroll", "container");
+
+  }
+}
+
+//panggil saat init
+scroll();
+
+// panggil saat discroll
+window.onscroll = () => {
+  scroll();
+};

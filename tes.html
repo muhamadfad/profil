@@ -1,103 +1,70 @@
-<div id="wrapper">
-    <div id="bulbasaur" class="pokemon"></div>
-    <div id="charmander" class="pokemon"></div>
-    <div id="squirtle" class="pokemon"></div>
-    <div id="pikachu" class="pokemon"></div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wave"></div>
+
+
+</body>
+
+</html>
+
 
 <style>
-    /* pokemone pictures */
-
-    .pokemon {
-        width: 200px;
-        height: 200px;
-        /* center content using flex box */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* overlay */
-        box-shadow: 0 0 0 100px inset, 0 0 5px grey;
-        /* hover out transition */
-        transition: box-shadow 1s;
-        float: left;
-        margin: 10px;
+    body {
+        height: 100vh;
+        background-color: #000;
+        overflow: hidden;
     }
 
-
-    /* pokemone names */
-
-    .pokemon::after {
-        width: 80%;
-        height: 80%;
-        display: block;
-        white-space: pre;
-        font: 15pt 'sigmar one';
-        color: white;
-        border: 2px solid;
-        text-align: center;
-        /* center content using flex box */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* hover out transition */
-        transition: opacity 1s .5s;
+    .wave,
+    .wave::before,
+    .wave::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250vw;
+        height: 250vw;
+        margin-left: -125vw;
+        transform-origin: 50% 50%;
+        background-color: transparent;
+        border-radius: 38% 42%;
+        box-shadow: inset 0 0 10vw rgba(255, 0, 255, 0.8);
+        animation: spin 16s infinite linear;
+        mix-blend-mode: multiply;
     }
 
-
-    /* reveal pokemone picture on hover */
-
-    .pokemon:hover {
-        box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
-        transition: box-shadow 1s;
+    .wave::before {
+        width: 105%;
+        height: 95%;
+        margin-top: -125vw;
+        transform-origin: 49% 51%;
+        border-radius: 40% 38%;
+        box-shadow: inset 0 0 10vw rgba(255, 255, 0, 0.8);
+        animation: spin 13s infinite linear;
     }
 
-
-    /* hide pokemone name on hover */
-
-    .pokemon:hover::after {
-        opacity: 0;
-        transition: opacity .5s;
+    .wave::after {
+        width: 102%;
+        height: 98%;
+        margin-top: -125vw;
+        transform-origin: 51% 49%;
+        border-radius: 48% 42%;
+        box-shadow: inset 0 0 10vw rgba(0, 255, 255, 0.8);
+        animation: spin 10s infinite linear;
     }
 
-    #bulbasaur {
-        background-image: url(http://vignette4.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest/scale-to-width-down/200?cb=20140328190757);
-        color: rgba(71, 121, 94, .9);
-    }
-
-    #bulbasaur::after {
-        content: 'Bulbasaur';
-    }
-
-    #charmander {
-        background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest/scale-to-width-down/200?cb=20140724195345);
-        color: rgba(221, 86, 63, .9);
-    }
-
-    #charmander::after {
-        content: 'Charmander'
-    }
-
-    #squirtle {
-        background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest/scale-to-width-down/200?cb=20140328191525);
-        color: rgba(65, 102, 114, .9);
-    }
-
-    #squirtle::after {
-        content: 'Squirtle'
-    }
-
-    #pikachu {
-        background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest/scale-to-width-down/200?cb=20140328192412);
-        color: rgba(179, 152, 98, .9);
-    }
-
-    #pikachu::after {
-        content: 'Pikachu'
-    }
-
-    #wrapper {
-        width: 500px;
-        height: 500px;
-        margin: auto;
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
     }
 </style>

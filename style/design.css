@@ -20,6 +20,14 @@ body {
 
 }
 
+.container-scroll {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
 nav ul li a {}
 
 .text {
@@ -33,7 +41,7 @@ nav ul li a {}
 
 .wrapper {
     position: sticky;
-    border-bottom: #9fa3a3 1px solid;
+
     font-family: 'Quicksand';
     top: 0;
 
@@ -101,8 +109,9 @@ nav ul li a {}
 }
 
 .copyright {
+    margin: 0;
     padding: 20px;
-    background-color: rgb(19, 114, 124);
+    background-color: rgb(132, 226, 236);
     text-align: center;
 }
 
@@ -131,6 +140,14 @@ nav ul li a {}
     .pic {
         width: 500px;
     }
+
+}
+
+@media screen and (max-width:960px) {
+    .pic {
+        max-width: 300px;
+    }
+
 }
 
 /* Design- One style css*/
