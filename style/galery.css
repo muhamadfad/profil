@@ -707,8 +707,5 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-    img {
-        width: 400px;
-
-    }
+    img {}
 }
