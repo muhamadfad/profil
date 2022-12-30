@@ -54,3 +54,30 @@ scroll();
 window.onscroll = () => {
   scroll();
 };
+
+//textarea
+
+
+
+var cols = document.getElementById("textarea");
+var cls = document.getElementById("textarea");
+
+cols.addEventListener('change', function (cols) {
+  var len = cols.length;
+  document.getElementById("demo").innerHTML = len;
+
+  document.getElementById("len").innerHTML = len;
+  if (len >= 30) {
+    navCont.classList.replace("textarea2", "textarea1");
+  }
+
+
+
+});
+
+
+
+
+
+
+

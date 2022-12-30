@@ -6,22 +6,15 @@
 }
 
 body {
+    padding: 0;
     margin: 0pt;
     font-family: 'Quicksand';
     background-color: rgb(195, 252, 234);
 }
 
-.container_one {
-    background-image: linear-gradient(to right, #4683b4b2, #00ffc89d, #dae4e0a6, #a6a8a7);
-
-}
-
-.first {
-
-    justify-content: center;
-    padding: 30px;
-    justify-content: space-around;
-
+.brand img {
+    margin-left: 30px;
+    width: 30px;
 }
 
 .box1 {
@@ -480,61 +473,68 @@ div .name {
     }
 }
 
-.container6 {
+
+
+.container6 .pic,
+.form {
+    width: 50%;
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
 
-    justify-content: center;
-    padding: 30px;
-    background: rgb(209, 252, 239);
+.container6 .pic,
+.form {
+    background-color: aliceblue;
+}
 
+.container6 img {
+
+    max-width: 80%;
 }
 
 .container_form {
+    min-width: 100%;
     font-family: 'Inter';
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+
     padding: 30px;
 
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 3px 5px 20px #18252589;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgb(219, 243, 235), rgb(197, 245, 235), rgb(193, 247, 235));
-
-
-
 }
 
-.box {
-    padding: 10pt 20pt 10pt 20pt;
-    margin: 10px;
-}
+
 
 label {}
 
 .box {
     width: 100%;
+    border-bottom: 1px #182525 solid;
+
+
 }
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+label {}
 
 input,
 textarea {
+    background-color: #18252500;
+
+    border: none;
+
+
     font-family: 'Inter';
-    border: 1px #182525 solid;
+
     color: rgb(67, 68, 68);
-    background-color: rgb(178, 235, 241);
-    height: 50px;
+
+
     width: 100%;
     justify-content: center;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    padding: 10px;
+
+
 
 }
 
@@ -547,17 +547,17 @@ button {
     -o-border-radius: 10px;
 }
 
-textarea {
-    border: 1px #182525 solid;
-    background-color: rgb(178, 235, 241);
-    height: 100px;
+.textarea1 {
+    height: 40px;
+    border: none;
+    overflow-y: scroll;
     width: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 10px;
+
 
 }
 
@@ -670,15 +670,49 @@ hr {
 
 @media screen and (min-width: 960px) {
 
+    .container6 {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        background: rgb(209, 252, 239);
+
+    }
 
     .box {
-        padding: 10pt 50pt 10pt 50pt;
-        margin: 10px;
+        padding: 10px;
+        display: flex;
+        margin: 30px;
+
+    }
+
+    input {
+        margin-left: 40px;
+    }
+
+    textarea {
+        margin-left: 15px;
     }
 
 }
 
-@media screen and(max-width:560px) {
+@media screen and (max-width:560px) {
+    .container_form {
+
+
+        padding: 10px;
+
+    }
+
+    .container6 .pic,
+    .form {
+        padding: 10px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
     .cont3 {
         justify-content: center;
         display: unset;
@@ -700,7 +734,22 @@ hr {
 
 }
 
-@media screen and(max-width:980px) {
+@media screen and (max-width:980px) {
+    .container_form {
+
+
+        padding: 20px;
+
+    }
+
+    .container6 .pic,
+    .form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
     .item i {
         font-size: 20px;
         margin: 20px;
