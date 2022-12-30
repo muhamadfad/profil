@@ -311,6 +311,11 @@ div .name {
     text-decoration: none;
 }
 
+.namecpp {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
 @media screen and (max-width:560px) {
     .aboutme {
         padding: 0;
@@ -403,7 +408,12 @@ div .name {
     .con img {
         margin-left: 20px;
         padding-top: 25px;
-        width: 40px;
+        width: 20px;
+    }
+
+    .namecpp {
+        margin-top: 10px;
+        margin-left: 20px;
     }
 
 
