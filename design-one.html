@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/design.css">
     <link rel="stylesheet" href="style/index.css">
     <script src="https://kit.fontawesome.com/be93d0f458.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Profil Fadli</title>
 </head>
 
@@ -40,20 +41,20 @@
     </div>
     <div class="container2">
         <div>
-            <h1>My Design</h1>
+            <h1 data-aos="fade-up-right">My Design</h1>
             <div class="designs ">
-                <h2>1. SIRANI (Sistem Rangking Nilai)</h2>
-                <p>sirani or value ranking system is a Website-Based Decision Support System Using the Simple Additive
+                <h2 data-aos="fade-up-right" >1. SIRANI (Sistem Rangking Nilai)</h2>
+                <p data-aos="fade-up-right">sirani or value ranking system is a Website-Based Decision Support System Using the Simple Additive
                     Weighting (SAW)
                     method
                 </p>
 
                 <ul class="ul">
-                    <li>The SAW method is often also known as the weighted sum method.</li>
-                    <li>The basic concept of SAW is to find a weighted sum of performance ratings for each alternative
+                    <li data-aos="fade-up-right">The SAW method is often also known as the weighted sum method.</li>
+                    <li data-aos="fade-up-right">The basic concept of SAW is to find a weighted sum of performance ratings for each alternative
                         on all attributes
                         (Fishburn, 1967) (MacCrimmon, 1968).</li>
-                    <li>This SAW method involves making decisions that determine the weight for each attribute. The
+                    <li data-aos="fade-up-right">This SAW method involves making decisions that determine the weight for each attribute. The
                         total score for the
                         alternative is obtained by adding up all the added results between the rating (which can be
                         compared across attributes)
@@ -62,33 +63,33 @@
                         previous matrix normalization proces</li>
                 </ul>
 
-                <h3>A. Work steps</h3>
+                <h3 data-aos="fade-up-right" >A. Work steps</h3>
                 <ol class="ol">
-                    <li>Determine the criteria and the weight value of the criteria (Wi) which will be used as a
+                    <li data-aos="fade-up-right">Determine the criteria and the weight value of the criteria (Wi) which will be used as a
                         reference in making
                         decisions, namely Ci</li>
-                    <li>Determine the suitability rating of each alternative on each criterion.</li>
-                    <li>Matrix normalization</li>
-                    <p>
+                    <li data-aos="fade-up-right">Determine the suitability rating of each alternative on each criterion.</li>
+                    <li data-aos="fade-up-right">Matrix normalization</li>
+                    <p data-aos="fade-up-right">
                         Based on the naming that is adjusted to the type of attribute (profit attribute or cost
                         attribute) so that it is
                         weighted by the R normalized matrix
                     </p>
-                    <img src="images/design/SAW.png" alt="" class="pic1">
-                    <p>
+                    <img data-aos="fade-up-right" src="images/design/SAW.png" alt="" class="pic1">
+                    <p data-aos="fade-up-right">
                         Where: <br>
                         rij = normalized performance rating <br>
                         Maxij = maximum value of each row and column <br>
                         Mini = minimum value of each row and column <br>
                         Xij = rows and columns of the matrix <br>
                     </p>
-                    <li>Preference (Vi) is the final result obtained from the ranking process which is the sum of the
+                    <li data-aos="fade-up-right">Preference (Vi) is the final result obtained from the ranking process which is the sum of the
                         multiplication of the
                         normalized matrix R with the weight vector so that the largest value is selected as the best
                         alternative (Ai) as a
                         solution.</li>
-                    <img src="images/design/SAW2.png" alt="" class="pic2">
-                    <p>
+                    <img data-aos="fade-up-right" src="images/design/SAW2.png" alt="" class="pic2">
+                    <p data-aos="fade-up-right">
                         Where: <br>
                         Vij = Final value of the alternative <br>
                         Wj = Predetermined weight <br>
@@ -98,34 +99,34 @@
                 </ol>
                 <div class="photo">
                     <div class="box-pic">
-                        <img src="images/design/index.png" alt="" class="pic">
+                        <img data-aos="fade-up-right" src="images/design/index.png" alt="" class="pic">
                     </div>
                     <div class="box-pic">
-                        <img src="images/design/data siswa.png" alt="" class="pic">
+                        <img data-aos="fade-up-right" src="images/design/data siswa.png" alt="" class="pic">
                     </div>
 
                 </div>
                 <div class="photo">
                     <div class="box-pic">
-                        <img src="images/design/penilaian.png" alt="" class="pic">
+                        <img data-aos="fade-up-right" src="images/design/penilaian.png" alt="" class="pic">
                     </div>
                     <div class="box-pic">
-                        <img src="images/design/rapor.png" alt="" class="pic">
+                        <img data-aos="fade-up-right" src="images/design/rapor.png" alt="" class="pic">
                     </div>
 
                 </div>
                 <div class="photo">
                     <div class="box-pic">
-                        <img src="images/design/bobot.png" alt="" class="pic">
+                        <img data-aos="fade-up-right" src="images/design/bobot.png" alt="" class="pic">
                     </div>
 
 
                 </div>
 
 
-                <div class="bt">
+                <div data-aos="fade-up-right" class="bt">
                     <div class="view">
-                        <a href="https://bit.ly/web-sirani">Preview &emsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a  href="https://bit.ly/web-sirani">Preview &emsp;<i class="fa-solid fa-arrow-right"></i></a>
 
                     </div>
                 </div>
@@ -154,6 +155,10 @@
 
 </body>
 <script src="script/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
 

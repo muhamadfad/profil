@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/be93d0f458.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>home</title>
   </head>
 
@@ -40,10 +41,10 @@
     </div>
     <div class="container2" id="home">
       <div class="cont3">
-        <div class="pic-1">
+        <div data-aos="fade-up" class="pic-1">
           <img src="images/profil.png" alt="" class="pic-img" />
         </div>
-        <div class="cont31">
+        <div data-aos="fade-right" class="cont31">
           <p>THIS IS ME</p>
           <h2>MUHAMAD FADLI</h2>
           <p>Web Designer & Developer</p>
@@ -53,7 +54,7 @@
 
     <div class="container-aboutme" id="aboutme">
       <div class="aboutme">
-        <div class="txt-aboutme">
+        <div data-aos="fade-right" class="txt-aboutme">
           <p style="font-size: 20px">About Me</p>
           <h1>Personal Details</h1>
           <p>
@@ -92,8 +93,8 @@
         "
       >
         <div>
-          <img src="images/fadli2.png" alt="" class="pic-2" />
-          <div style="display: flex; justify-content: center; width: 100%">
+          <img data-aos="fade-up" src="images/fadli2.png" alt="" class="pic-2" />
+          <div data-aos="fade-up" style="display: flex; justify-content: center; width: 100%">
             <div class="items">
               <div>
                 <a href="https://www.instagram.com/fadlicode/"><i class="fa-brands fa-instagram-square"></i></a>
@@ -118,23 +119,23 @@
     <div class="container3" id="aboutme">
       <div class="cnt-1">
         <div>
-          <img src="images/sertifikat 1.png" alt="" class="pic-3" />
+          <img data-aos="fade-up-right" src="images/sertifikat 1.png" alt="" class="pic-3" />
         </div>
       </div>
 
       <div class="cnt-2">
-        <div>
+        <div >
           <h1 style="text-align: justify">Portfolio</h1>
-          <p>
+          <p data-aos="fade-up">
             I have been certified competent by the Indonesian professional
             certification authority since October 28, 2022 in the field of
             software development and programming with the following
             qualifications: Junior Web Developer, which is valid until October
             28, 2025
           </p>
-          <div class="skill">
-            <p class="skil">Some programming that i can :</p>
-            <span class="item">
+          <div data-aos="fade-up" class="skill">
+            <p data-aos="fade-up-right" class="skil">Some programming that i can :</p>
+            <span data-aos="fade-up-right" class="item">
               <div class="con">
                 <i class="fa-brands fa-python"></i>
                 <div class="name">Python</div>
@@ -177,7 +178,7 @@
               </div>
             </span>
           </div>
-          <div class="design">
+          <div data-aos="fade-up-right" class="design">
             <div class="bt-design">
               <a href="design.html"
                 >see my designs &emsp;<i class="fa-solid fa-arrow-right"></i
@@ -188,7 +189,7 @@
       </div>
     </div>
 
-    <div class="container6">
+    <div data-aos="fade-right" class="container6">
       <div class="pic">
         <img src="images/contact.png" alt="" />
       </div>
@@ -253,6 +254,10 @@
     </div>
   </body>
   <script src="script/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
 <? php
 error_reporting(0);
