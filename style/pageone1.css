@@ -131,7 +131,21 @@ nav ul li a {}
 
 }
 
-
+.box-call{
+    margin-top: 20px;
+    padding: 10px;
+    width: max-content;
+    background-color: #4682B4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.box-call a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -209,7 +223,7 @@ nav ul li a {}
 }
 
 .icon {
-    border-left: 1px beige solid;
+    border-left: 0.1px beige solid;
 }
 
 
