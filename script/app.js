@@ -76,6 +76,12 @@ cols.addEventListener('change', function (cols) {
 });
 
 
+/*light mode and dark mode*/
+function modeLD() {
+
+  document.getElementById("home").classList.toggle("container2-darkmode");
+}
+
 
 
 
