@@ -127,8 +127,9 @@ input:checked+.slider:before {
 
 
 .container-scroll {
-  background-color: rgba(255, 255, 255, 0.453);
-  backdrop-filter: blur(10px);
+  z-index: 3;
+  background-color: #13005A;
+  
   border-bottom: 0.5px rgb(255, 255, 255) solid;
   padding: 10px 20px;
   transition: 0.5s;
@@ -189,6 +190,7 @@ nav ul {
   display: flex;
   position: fixed;
   background-color: #505050;
+  z-index: 4;
   top: 0;
   bottom: 0;
   right: -300px;

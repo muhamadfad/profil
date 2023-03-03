@@ -215,19 +215,13 @@ nav ul li a {}
 
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 280e46c993a47c382fc7cb741121fe36f3e7aac8
 .box-call{
     margin-top: 20px;
     padding: 10px;
     width: max-content;
-<<<<<<< HEAD
     background-color: #03C988;
-=======
-    background-color: #4682B4;
->>>>>>> 280e46c993a47c382fc7cb741121fe36f3e7aac8
+    
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -318,13 +312,9 @@ div.items :hover {
 color: white;
 }
 
-<<<<<<< HEAD
 
-=======
-.icon {
-    border-left: 0.1px beige solid;
-}
->>>>>>> 280e46c993a47c382fc7cb741121fe36f3e7aac8
+
+
 
 
 
