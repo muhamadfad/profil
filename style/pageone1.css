@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Nunito:wght@300;400;700;800&family=Quicksand:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -8,8 +9,8 @@
 body {
     padding: 0;
     margin: 0pt;
-    font-family: 'Quicksand';
-    background-color: rgb(195, 252, 234);
+    font-family: 'Poppins';
+    background: #13005A;
    
 }
 
@@ -90,15 +91,7 @@ nav ul li a {}
 
 }
 
-.wrapper {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
 
-    top: 0;
-
-
-}
 
 
 
@@ -117,75 +110,75 @@ nav ul li a {}
     
 }
 .rmd2 {
-    width: 70px;
+    width: 60px;
     position: absolute;
 
 
 }
 .one {
     top: 70px;
-    left: 2%;
+    left: 1%;
 }
 .two{
     top: 200px;
-    left: 10%;
+    left: 7%;
 }
 .three{
     top: 90px;
-    right: 5%;
+    right: 4%;
 
 }
 .four{
     top: 150px;
-        right: 17%;
+        right: 13%;
 }
 .five{
     top: 400px;
-        left: 5%;
+        left: 3%;
 }
 .six{
     top: 90px;
-        left:45%;
+        left:35%;
 }
 .seven{
     top: 500px;
-        left:50%;
+        left:40%;
 }
 .eigth{
     top: 450px;
-        right: 60%;
+        right: 50%;
 }
 .nine{
     top: 480px;
-        right: 10%;
+        right: 8%;
 }
 .ten{
     top: 550px;
-        left: 15%;
+        left: 13%;
 }
 .eleven{
     top: 380px;
-        right: 20%;
+        right: 16%;
 }
 .twelve{
     top: 580px;
-        right: 17%;
+        right: 14%;
 }
 .thirten{
     top: 250px;
-        left: 40%;
+        left: 37%;
 }
 .fourten{
     top: 300px;
-        right: 40%;
+        right: 27%;
 }
 .fiveten{
     top: 50px;
-        right: 30%;
+        right: 24%;
 }
 .sixten{
     top: 580px;
-        left: 2%;
+        left: 1%;
 }
 
 
@@ -242,13 +235,13 @@ nav ul li a {}
 }
 
 .cont31 h2 {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-size: 40px;
     line-height: 100px;
 }
 
 .container-aboutme {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     background: #00337C;
     color: rgb(255, 255, 255);
     font-size: 15px;
@@ -329,7 +322,7 @@ color: white;
 }
 
 .container3 {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-size: 15px;
     font-weight: 300;
     text-align: justify;
@@ -469,7 +462,7 @@ div .name {
     }
 
     .cont31 h2 {
-        font-family: 'Inter';
+        font-family: 'Poppins';
         font-size: 30px;
         line-height: 100px;
     }
@@ -528,6 +521,95 @@ div .name {
 }
 
 @media screen and (min-width: 960px) {
+    .rmd {
+            width: 40px;
+            position: absolute;
+    
+    
+        }
+    
+        .rmd2 {
+            width: 70px;
+            position: absolute;
+    
+    
+        }
+    
+        .one {
+            top: 70px;
+            left: 2%;
+        }
+    
+        .two {
+            top: 200px;
+            left: 10%;
+        }
+    
+        .three {
+            top: 90px;
+            right: 5%;
+    
+        }
+    
+        .four {
+            top: 150px;
+            right: 17%;
+        }
+    
+        .five {
+            top: 400px;
+            left: 5%;
+        }
+    
+        .six {
+            top: 90px;
+            left: 45%;
+        }
+    
+        .seven {
+            top: 500px;
+            left: 50%;
+        }
+    
+        .eigth {
+            top: 450px;
+            right: 60%;
+        }
+    
+        .nine {
+            top: 480px;
+            right: 10%;
+        }
+    
+        .ten {
+            top: 550px;
+            left: 15%;
+        }
+    
+        .eleven {
+            top: 380px;
+            right: 20%;
+        }
+    
+        .twelve {
+            top: 580px;
+            right: 17%;
+        }
+    
+        .thirten {
+            top: 250px;
+            left: 40%;
+        }
+    
+        .fourten {
+            top: 300px;
+            right: 40%;
+        }
+    
+        .fiveten {
+            top: 50px;
+            right: 30%;
+        }
    
 
     .container-aboutme {
@@ -619,9 +701,10 @@ iframe{
 
 .container_form {
     min-width: 100%;
-    font-family: 'Inter';
+    font-family: 'Poppins';
 
     padding: 30px;
+    
 
 }
 
@@ -657,14 +740,14 @@ input[type="submit"]{
 }
 input,
 textarea {
-    background-color: #18252500;
+    background-color: #43aaaa00;
 
     border: none;
 
 
-    font-family: 'Inter';
+    font-family: 'Poppins';
 
-    color: rgb(67, 68, 68);
+    
 
 
     width: 100%;
@@ -701,7 +784,7 @@ button {
 
 h1 {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Poppins';
     margin-bottom: 20px;
 }
 
@@ -861,4 +944,73 @@ hr {
     }
 
 
+}
+
+
+/* timer bulan ramadhan*/
+.timer{
+    margin-left: 10px;
+        background-color: rgba(255, 255, 255, 0.534);
+        backdrop-filter: blur(5px);
+        width: 300px;
+        top: 100px;
+        position: fixed;
+        z-index: 2;
+        font-size: 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        overflow: hidden;
+}
+.timer_change{
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-left: 10px;
+        background-color: rgba(255, 255, 255, 0.534);
+        backdrop-filter: blur(5px);
+        width: 300px;
+        top: 100px;
+        position: fixed;
+        z-index: 2;
+        font-size: 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        overflow: hidden;
+}
+
+.judul{
+    text-align: center;
+    width: 80%;
+    
+}
+  .exit{
+    text-align: end;
+    width: 20%;
+    position: relative;
+    left: 1px;
+   
+  } 
+.exit i{
+    
+    text-align: end;
+    color: red;
+
+}
+.bxt1{
+   
+    padding: 5px 20px;
+    display: flex;
+}
+.bxt2{
+    padding: 10px;
+    text-align: center;
 }

@@ -125,11 +125,39 @@ input:checked+.slider:before {
 }
 /* wraper */
 
+.wrapper {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+
+}
+
+.wrapper-scroll {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 5px;
+  padding: 5px;
+  
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
 
 .container-scroll {
-  z-index: 3;
-  background-color: #13005A;
+ 
+  background-color: #ffffff;
   
+  
+  border-radius: 20px;
   border-bottom: 0.5px rgb(255, 255, 255) solid;
   padding: 10px 20px;
   transition: 0.5s;
@@ -137,7 +165,16 @@ input:checked+.slider:before {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.526);
 }
+.container-scroll ::before{
+  backdrop-filter: blur(5px);
+}
+
 
 .container {
   background-color: #13005A;
@@ -190,7 +227,7 @@ nav ul {
   display: flex;
   position: fixed;
   background-color: #505050;
-  z-index: 4;
+  
   top: 0;
   bottom: 0;
   right: -300px;
@@ -212,12 +249,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 15px;
   text-decoration: none;
 }
 
 @media screen and (min-width: 960px) {
+  .wrapper-scroll{
+    padding: 10px;
+  }
 
   .bg-sidebar.change {
     right: 0;
@@ -261,7 +301,7 @@ nav ul li a {
 
 
   nav ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(28, 130, 173);
     font-size: 1.1rem;
   }
 

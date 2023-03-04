@@ -6,6 +6,7 @@ const burger = document.querySelector('.burger')
 const sidebar = document.querySelector('.sidebar')
 const bgSidebar = document.querySelector('.bg-sidebar')
 
+
 burger.addEventListener('click', function () {
   this.classList.toggle('change')
   sidebar.classList.toggle('change')
@@ -33,16 +34,19 @@ window.onscroll = function () {
 
 
 const navCont = document.getElementById("navCont");
+const wrapper = document.getElementById("wrapper");
 
 // buat function scroll
 function scroll() {
   let calc = window.scrollY;
   if (calc > 0) {
     navCont.classList.replace("container", "container-scroll");
+    wrapper.classList.replace("wrapper","wrapper-scroll")
 
 
   } else if (calc <= 0) {
     navCont.classList.replace("container-scroll", "container");
+    wrapper.classList.replace("wrapper-scroll","wrapper")
 
   }
 }
@@ -76,11 +80,13 @@ cols.addEventListener('change', function (cols) {
 });
 
 
-/*light mode and dark mode*/
-function modeLD() {
+const exit = document.getElementById("exit")
+const timer = document.getElementById("timer")
+exit.addEventListener('click', function () { 
+   timer.classList.replace("timer", "timer_change");
 
-  document.getElementById("home").classList.toggle("container2-darkmode");
-}
+
+})
 
 
 
