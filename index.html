@@ -1,409 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/pageone1.css" />
-    <link rel="stylesheet" href="style/index.css" />
-    <script
-      src="https://kit.fontawesome.com/be93d0f458.js"
-      crossorigin="anonymous"
-    ></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://kit.fontawesome.com/be93d0f458.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>home</title>
-  </head>
+    <title>Document</title>
+</head>
 
-  <body>
-    <div class="wrapper" id="wrapper">
-      <nav>
-        <div class="container" id="navCont">
-          <div class="brand">
-            <img src="images/logo/logo_fadli.png" alt="" />
-          </div>
-          <div class="box-burger">
-            <div class="burger">
-              <div class="bar1"></div>
-              <div class="bar3"></div>
-            </div>
-          </div>
-
-
-          <div class="bg-sidebar"></div>
-          
-            
-            <ul class="sidebar">
-              <li><a href="#home">home</a></li>
-              <li><a href="#aboutme">about me</a></li>
-              <li><a href="#contact">contact us</a></li>
-              <li><a href="galery.html">Galery</a></li>
-              <li><a href="design.html">My design</a></li>
-
-             
-            
-            </ul>
-            
-
-          
-          
-          
-        </div>
-      </nav>
-    </div>
+<body>
     
-    <div class="timer" id="timer">
-      <div class="bxt1" >
-        <div class="judul">
-          <p >Ramadhan 1444 H </p> 
+    <div class="container">
+        <div class="wrapper" id="">
+            <nav>
+                <div class="navbar" id="navbar">
 
-        </div>
-        <div class="exit" id="exit">
-          <a href="#" onclick="myFunction()"><i class="fa-solid fa-xmark"></i></a>
-          <script>
-            function myFunction() {
-              const timer = document.getElementById("timer")
-              timer.classList.replace("timer", "timer_change");
-            }
-          </script>
-
-        </div>
-        <div>
-          
-         
-        </div>
-
-      </div>
-      <hr>
-      <div class="bxt2">
-        <div id="ramadhan">
-          <span id="hitungmundur"></span>
-        </div>
-        
-        <script type="text/javascript">
-          var target_date = new Date("Maret 22, 2023").getTime(); var days, hours, minutes, seconds; var hitungmundur = document.getElementById("hitungmundur"); setInterval(function () {
-            var current_date = new Date().getTime(); var seconds_left = (target_date - current_date) / 1000;
-            days = parseInt(seconds_left / 86400); seconds_left = seconds_left % 86400; hours = parseInt(seconds_left / 3600); seconds_left = seconds_left % 3600; minutes = parseInt(seconds_left / 60); seconds = parseInt(seconds_left % 60); hitungmundur.innerHTML = days + " <span class=\'digital\'>hari</span> " + hours + " <span class=\'digital\'>jam</span> "
-              + minutes + " <span class=\'digital\'>menit</span> " + seconds + " <span class=\'digital\'>detik </span>";
-          }, 1000);
-        </script>
-
-      </div>
-      
-
-    </div>
-    <div class="container2" id="home">
-      <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"  class="rmd2 one"><img src="images/ramadhan/rmd (1).png" alt=""></div>
-      <div class="rmd two" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000"><img src="images/ramadhan/rmd (2).png" alt=""></div>
-      <div class="rmd2 three" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="800"><img src="images/ramadhan/rmd (3).png" alt=""></div>
-      <div class="rmd four" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="700"><img src="images/ramadhan/rmd (4).png" alt=""></div>
-      <div class="rmd2 five" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1200"><img src="images/ramadhan/rmd (5).png" alt=""></div>
-      <div class="rmd six" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1300"><img src="images/ramadhan/rmd (6).png" alt=""></div>
-      <div class="rmd2 seven" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1100"><img src="images/ramadhan/rmd (7).png" alt=""></div>
-      <div class="rmd eigth" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1600"><img src="images/ramadhan/rmd (8).png" alt=""></div>
-      <div class="rmd2 nine" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="800"><img src="images/ramadhan/rmd (9).png" alt=""></div>
-      <div class="rmd ten" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="800"><img src="images/ramadhan/rmd (10).png" alt=""></div>
-      <div class="rmd eleven" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000"><img src="images/ramadhan/rmd (11).png" alt=""></div>
-      <div class="rmd2 twelve" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="900"><img src="images/ramadhan/rmd (12).png" alt=""></div>
-      <div class="rmd thirten" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000"><img src="images/ramadhan/rmd (13).png" alt=""></div>
-      <div class="rmd fourten" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="950"><img src="images/ramadhan/rmd (14).png" alt=""></div>
-      <div class="rmd2 fiveten" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1300"><img src="images/ramadhan/rmd (15).png" alt=""></div>
-      <div class="rmd sixten" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"><img src="images/ramadhan/rmd (16).png" alt=""></div>
-      <div class="cont3">
-        
-
-        <div data-aos="fade-up" class="pic-1">
-          <img src="images/profil.png" alt="" class="pic-img" />
-        </div>
-        <div data-aos="fade-right" class="cont31">
-          <p>THIS IS ME</p>
-          <h2>MUHAMAD FADLI</h2>
-          <p>Web Designer & Developer</p>
-
-          <div class="c-call">
-            <div class="box-call"><a href="">DM Me</a></div>
-
-          </div>
-         
-        
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container-aboutme" id="aboutme" >
-      <div class="aboutme">
-        <div data-aos="fade-right" class="txt-aboutme">
-          <p style="font-size: 20px">About Me</p>
-         
-
-          <h1>Personal Details</h1>
-          <p>
-            Hello everyone, thank you for visiting my website which still has
-            many shortcomings. Introducing my name is Muhamad Fadli, usually
-            called Fadli. I'm an IT student, recently I started to deepen into
-            web design, as you can see this is a profile web design that I made.
-          </p>
-          <br />
-          <p>
-            I live in Kendari City, Southeast Sulawesi, Indonesia. I was born in
-            bekasi City, February 08, 2003. I am 19 years old. And i am an
-            Informatics Engineering Student at Halu Oleo University, Kendari
-          </p>
-          <br />
-          <p>
-            I have entered the world of programming for about 1.5 years, when I
-            continued my education at university. Previously I was a student at
-            Tahfidzul Qur'an Muadz Bin Jabal Kendari Islamic Boarding School.
-          </p>
-          <br />
-          <p>
-            My current job is studying, and deepening my knowledge of
-            programming. I like playing futsal, playing badminton,and reading
-            novels.
-          </p>
-        </div>
-      </div>
-      <div
-        class="aboutme"
-        style="
-          margin-top: 80px;
-          margin-bottom: 80px;
-          display: flex;
-          justify-content: center;
-        "
-      >
-        <div>
-          <img data-aos="fade-up" src="images/fadli2.png" alt="" class="pic-2" />
-          <div data-aos="fade-up" style="display: flex; justify-content: center; width: 100%">
-            <div class="items">
-              <a href="https://www.instagram.com/fadlicode/">
-              <div>
-                <i class="fa-brands fa-instagram-square"></i>
-              </div>
-              </a>
-              <a href="https://www.linkedin.com/in/muhamad-fadli-8b9385258/">
-              <div class="icon">
-
-                <i class="fa-brands fa-linkedin"></i>
-
-              </div>
-              </a>
-              <a href="">
-              <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-              </div>
-              </a>
-              <a href="https://github.com/muhamadfad">
-              <div class="icon">
-                <i class="fa-brands fa-github"></i>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container3" id="aboutme">
-      <div class="cnt-1">
-        <div>
-          <img data-aos="fade-up-right" src="images/sertifikat 1.png" alt="" class="pic-3" />
-        </div>
-      </div>
-
-      <div class="cnt-2">
-        <div >
-          <h1 style="text-align: justify">Portfolio</h1>
-          <p data-aos="fade-up">
-            I have been certified competent by the Indonesian professional
-            certification authority since October 28, 2022 in the field of
-            software development and programming with the following
-            qualifications: Junior Web Developer, which is valid until October
-            28, 2025
-          </p>
-          <div data-aos="fade-up" class="skill">
-            <p data-aos="fade-up-right" class="skil">Some programming that i can :</p>
-            <span data-aos="fade-up-right" class="item">
-              <div class="con">
-                <i class="fa-brands fa-python"></i>
-                <div class="name">Python</div>
-              </div>
-
-              <div class="con">
-                <i class="fa-brands fa-js"></i>
-                <div class="name">Java Script</div>
-              </div>
-
-              <div class="con">
-                <i class="fa-brands fa-php" class></i>
-                <div class="name">
-                  Hypertext <br />
-                  Preprocessor
+            
+                <div class="box-burger">
+                    <div class="burger">
+                        <div class="bar1"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
-              </div>
-              <div class="con">
-                <img src="images/cpp.svg" alt="" style="cpp" />
-                <div class="namecpp">CPP</div>
-              </div>
-            </span>
-            <p class="skil">Some Aplication that i can :</p>
-            <span class="item">
-              <div class="con">
-                <img src="images/logo/word.png" alt="" />
-                <div class="name"></div>
-              </div>
-              <div class="con">
-                <img src="images/logo/excel.png" alt="" />
-                <div class="name"></div>
-              </div>
-              <div class="con">
-                <img src="images/logo/powerpoint.png" alt="" />
-                <div class="name"></div>
-              </div>
-              <div class="con">
-                <img src="images/logo/figma.png" alt="" />
-                <div class="name"></div>
-              </div>
-            </span>
-          </div>
-          <div data-aos="fade-up-right" class="design">
-            <div class="bt-design">
-              <a href="design.html"
-                >see my designs &emsp;<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
+                <div class="bg-sidebar"></div>
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutme">About me</a></li>
+                        <li><a href="#contact">Portfolio</a></li>
+                        <li><a href="galery.html">Design</a></li>
+                        <li><a href="galery.html">Galery</a></li>
+                        <li><a href="design.html">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+
+            </nav>
+            
+            
+        
         </div>
-      </div>
+        <div class="card_top">
+            <div>
+                <p>
+                    <span class="hello">Hello, I'm</span> <br>
+                    <span class="name">MUHAMAD FADLI</span> <br>
+                    <span class="desc">(Web Developer from kendari, Indonesia)</span>
+                </p>
+            </div>
+        
+        </div>
+        <div class="img_home">
+            <img src="images/muhamad_fadli.png" alt="">
+
+        </div>
+        
+
     </div>
+    <div class="container2">
+        <div class="box1" >
+           
+            
+                <img src="images/img_2.png" alt="">
+            
+        </div>
+        <div class="box2">
+            <h1>- About Me</h1>
+            <span class="text">
+                <p>
+                    Hello everyone, thank you for visiting my website which still has many shortcomings. Introducing my name is Muhamad
+                    Fadli, usually called Fadli. I'm an IT student, recently I started to deepen into web design, as you can see this is a
+                    profile web design that I made.
+                </p>
+                <p>
+                    I live in Kendari City, Southeast Sulawesi, Indonesia. I was born in bekasi City, February 08, 2003. I am 19 years old.
+                And i am an Informatics Engineering Student at Halu Oleo University, Kendari</p>
+                <p>
+                    I have entered the world of programming for about 1.5 years, when I continued my education at university. Previously I
+                    was a student at Tahfidzul Qur'an Muadz Bin Jabal Kendari Islamic Boarding School.
+                </p>
+                <p>
+                    My current job is studying, and deepening my knowledge of programming. I like playing futsal, playing badminton,and
+                    reading novels.
+                </p>
+    
+                
+            </span>
+        </div>
 
-    <div data-aos="fade-right" class="container6">
-      <div class="pic">
-      <iframe src="https://embed.lottiefiles.com/animation/18710"></iframe>
-      </div>
-      <div class="form">
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdm2Qki3k3Gi2w3ufLqLN-hMqoBh6FjZSdF46InPs-OKUzfug/formResponse" method="post">
-          <div class="container_form">
-            <h3>Contact</h3>
-
-            <div class="box">
-              <div>
-                <label for="name" class="text-base font-bold text-primary"
-                  >Name:</label
-                >
-              </div>
-              <div><input type="text" placeholder="Masukan Namamu" name="entry.738810276" /></div>
-            </div>
-
-            <div class="box">
-              <div>
-                <label for="email" class="text-base font-bold text-primary"
-                  >Email:</label
-                >
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="entry.504316454"
-                  id="email"
-                  placeholder="Your Email Adress..."
-                  required
-                />
-              </div>
-            </div>
-            <div class="box">
-              <div>
-                <label for="message" class="text-base font-bold text-primary"
-                  >Message:</label
-                >
-              </div>
-              <div>
-                <textarea
-                  name="entry.625391528"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="tuliskan pesanmu"
-                  id="textarea"
-                ></textarea>
-              </div>
-              <p id="len"></p>
-            </div>
-            <div class="">
-              <input type="submit" value="submit" class="submit" />
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
-    <div class="design" id="design"></div>
-    <div class="copyright">
-      <p>Copyright © 2022 DliDev. All Rights Reserved</p>
+    <div class="container3">
+        <div class="box1">
+            <h1>- Portfolio</h1>
+            <p>
+                I have been certified competent by the Indonesian professional certification authority since October 28, 2022 in the
+            field of software development and programming with the following qualifications: Junior Web Developer, which is valid
+            until October 28, 2025
+            </p>
+            <div data-aos="fade-up" class="skill">
+                <h2 data-aos="fade-up-right" >Some programming that i can :</h2>
+                <span data-aos="fade-up-right" class="item">
+                    <div class="con">
+                        <i class="fa-brands fa-python"></i>
+                        <div class="name">Python</div>
+                    </div>
+            
+                    <div class="con">
+                        <i class="fa-brands fa-js"></i>
+                        <div class="name">Java Script</div>
+                    </div>
+            
+                    <div class="con">
+                        <i class="fa-brands fa-php" class></i>
+                        <div class="name">
+                            Hypertext <br />
+                            Preprocessor
+                        </div>
+                    </div>
+                    <div class="con">
+                        <img src="images/cpp.svg" alt="" style="cpp" />
+                        <div class="namecpp">CPP</div>
+                    </div>
+                </span>
+               
+            </div>
+
+        </div>
+        <div class="box2">
+            <img src="images/img_3.png" alt="">
+
+        </div>
+
     </div>
-  </body>
-  <script src="script/app.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</html>
-<? php
-error_reporting(0);
-
-    $nama = $_POST['name'];
-    $email = $_POST['email'];
-    $pesan = $_POST['message'];
-
-    /* $con = variable yang akan digunakan untuk koneksi
-    database dan untuk mengeksekusi perintah sql */
-    $con = mysqli_connect("localhost", "root", ""); //koneksi ke mysql 
-    mysqli_select_db($con, "db_profil");       //koneksi ke database
-    if ($_POST['masuk']) {
-        $sql = "INSERT INTO pesan (nama,email,pesan)
-        VALUES('$nama', '$email', '$pesan')";
-        mysqli_query($con, $sql); /// eksekusi perintah sql
-    }
-
- ?>
+</body>
+<script src="script/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  window.addEventListener("load", function () {
-    if (window.history.replaceState) {
-      window.history.replaceState(null, null, window.location.href);
-    }
-  });
+    AOS.init();
 </script>
 
-
-
-
+</html>

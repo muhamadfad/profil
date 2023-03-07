@@ -33,19 +33,19 @@ window.onscroll = function () {
 
 
 
-const navCont = document.getElementById("navCont");
+const navCont = document.getElementById("navbar");
 const wrapper = document.getElementById("wrapper");
 
 // buat function scroll
 function scroll() {
   let calc = window.scrollY;
-  if (calc > 0) {
-    navCont.classList.replace("container", "container-scroll");
+  if (calc > 100) {
+    navCont.classList.replace("navbar", "navbar-scroll");
     wrapper.classList.replace("wrapper","wrapper-scroll")
 
 
-  } else if (calc <= 0) {
-    navCont.classList.replace("container-scroll", "container");
+  } else if (calc <= 10) {
+    navCont.classList.replace("navbar-scroll", "navbar");
     wrapper.classList.replace("wrapper-scroll","wrapper")
 
   }

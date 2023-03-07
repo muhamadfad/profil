@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+        margin: 0;
+        background-color: rgba(51, 50, 50, 1);
+}
+.container{
+    background-color: white;
+
+    width: 100%;
+    height: 650px;
+}
+.img_home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+}
+.img_home img {
+    max-height: 650px;
+    min-height: 650px;
+    width: 75%;
+    object-fit: cover;
+    object-position: center;
+    
+
+
+
+}
+.card_top{
+    font-family: 'Poppins';
+    color: white;
+    position: absolute;
+   
+    z-index: 1;
+    width: 100%;
+    height: 650px;
+    background-color: rgba(75, 70, 70, 0.676);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+.card_top .hello{
+    font-size: 50px;
+   
+}
+.card_top .name{
+    font-size: 80px;
+    font-weight: 700;
+}
+.card_top .desc {
+    font-size: 30px;
+
+}
+.container2{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(51, 50, 50, 1);
+
+}
+.container2 h1{
+    text-align: right;
+}
+.container3 h1{
+    text-align: left;
+}
+.container2 h1,.container3 h1{
+    
+    font-size: 40px;
+    color: rgba(237, 224, 108, 1);
+    margin-bottom: 20px;
+}
+.container2 .text,.container3 p{
+    
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+.container2 p{
+    margin-top: 15px;
+}
+
+
+
+.box1 img,.box2 img{
+    width: 80%;
+  
+   
+}
+
+.decor_img_2 {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 150px;
+    background-color: rgb(161, 160, 160);
+    left: 35.5%;
+    margin-top: 2%;
+}
+
+.container2 .box1{
+    justify-content: center;
+    display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 600px;
+}
+.container3{
+    font-family: 'Courier New', Courier, monospace;
+        background-color: rgba(51, 50, 50, 1);
+}
+.container3 .box2 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 600px;
+}
+.container3 h2{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 30px;
+        color: rgba(237, 224, 108, 1);
+        margin-bottom: 20px;
+
+}
+
+
+.item {
+    display: flex;
+
+
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 50px;
+    margin: 20px;
+
+
+}
+
+.item i:hover {
+    color: rgb(255, 255, 255);
+}
+
+.item .icon {
+    margin-right: 1000px;
+}
+
+
+.con img {
+    margin-left: 20px;
+    padding-top: 50px;
+    width: 40px;
+}
+
+div .name {
+    font-size: 15px;
+    color: white;
+
+
+}
+
+.w-full {
+    width: 150px;
+}
+@media screen and (min-width:960px) {
+    .container2,.container3 {
+        padding: 30px;
+            display: flex;
+        }
+    
+        .container2 .box1, .container2 .box2,.container3 .box1,
+        .container3 .box2{
+            
+            width: 50%;
+            padding: 100px 20px 20px 20px;
+
+        }
+        
+                .box1 img,.box2 img {
+                    width: 350px;
+        
+        
+                }
+}
+@media screen and (min-width:560px){
+    .box1 img,
+        .box2 img {
+            width: 50%;
+    
+    
+        }
+    
+}
+@media screen and (max-width:960px){
+    .container2,.container3 {
+            padding: 20px;
+            
+        }
+        .container2 .box1,
+        .container2 .box2,
+        .container3 .box1,
+        .container3 .box2{
+            margin-top: 50px;
+        }
+                
+               
+}
+@media screen and (max-width:560px) {
+
+    
+    .img_home img {
+         
+            width: 100%;
+
+        }
+        .card_top .hello {
+            font-size: 25px;
+    
+        }
+    
+        .card_top .name {
+            font-size: 50px;
+            font-weight: 600;
+        }
+    
+        .card_top .desc {
+            font-size: 15px;
+    
+        }
+                .container2 .box1,
+                .container2 .box2 {
+        
+                    width: 100%;
+                   
+        
+        
+                }
+  
+    
+}
