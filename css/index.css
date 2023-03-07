@@ -27,6 +27,13 @@ body{
     width: 75%;
     object-fit: cover;
     object-position: center;
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        
+        image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
     
 
 
@@ -216,6 +223,7 @@ div .name {
 }
 @media screen and (max-width:560px) {
 
+
     
     .img_home img {
          
@@ -236,6 +244,20 @@ div .name {
             font-size: 15px;
     
         }
+                .container2 h1,
+                .container3 h1 {
+                   
+        
+                    font-size: 30px;
+                    color: rgba(237, 224, 108, 1);
+                    margin-bottom: 20px;
+                }
+                 .container3 h2 {
+                                    
+                                    font-size: 20px;
+                                  
+                
+                                }
                 .container2 .box1,
                 .container2 .box2 {
         
@@ -244,6 +266,30 @@ div .name {
         
         
                 }
+                                .container2 .text,
+                                .container3 p {
+                
+                                    font-size: 15px;
+                                    color: white;
+                                    text-align: justify;
+                                }
   
     
+}
+
+
+.copyright{
+    background-color: rgba(237, 224, 108, 1);
+    padding: 10px;
+    font-family: 'Poppins';
+}
+.items {
+    display: flex;
+}
+.items i{
+    font-size: 30px;
+    color: rgba(51, 50, 50, 1);
+}
+.items i:hover{
+    color: rgb(116, 113, 113);
 }

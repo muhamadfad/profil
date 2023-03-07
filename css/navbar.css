@@ -17,11 +17,25 @@ body {
     top: 0;
     z-index: 3;
     font-family: 'Poppins';
+    transition: 0.5s;
+}
+.wrapper-scroll{
+    transition: 0.5s;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    font-family: 'Poppins';
+    background-color: white;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .navbar-scroll{
     
-    background-color: white;
+   
 }
  nav ul li a{
     color: rgb(0, 0, 0);
@@ -139,22 +153,22 @@ nav .brand a {
 }
 
 nav ul {
-    z-index: ;
+   
     display: flex;
     position: fixed;
     background-color: #505050;
 
     top: 0;
     bottom: 0;
-    right: -300px;
+    right:-300px;
     width: 300px;
     transition: .5s;
     align-items: flex-start;
     flex-direction: column;
 }
 
-nav ul.change {
-    right: 100px;
+.change ul {
+    right: 0;
     transition: .5s;
 }
 
@@ -162,6 +176,9 @@ nav ul li {
     list-style: none;
     padding: 10px;
 
+}
+nav ul li a:hover{
+    color: rgba(237, 224, 108, 1);
 }
 @media screen and (max-width:960px) {
     .navbar {
@@ -210,8 +227,6 @@ nav ul li {
 
    
 
-
-   
 
     nav ul li:last-child {
         font-weight: 550;

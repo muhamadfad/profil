@@ -39,13 +39,13 @@ const wrapper = document.getElementById("wrapper");
 // buat function scroll
 function scroll() {
   let calc = window.scrollY;
-  if (calc > 100) {
-    navCont.classList.replace("navbar", "navbar-scroll"); 
+  if (calc > 0) {
+   
     wrapper.classList.replace("wrapper","wrapper-scroll")
 
 
-  } else if (calc <= 10) {
-    navCont.classList.replace("navbar-scroll", "navbar");
+  } else if (calc <= 0) {
+    
     wrapper.classList.replace("wrapper-scroll","wrapper")
 
   }
