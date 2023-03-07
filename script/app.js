@@ -40,7 +40,7 @@ const wrapper = document.getElementById("wrapper");
 function scroll() {
   let calc = window.scrollY;
   if (calc > 100) {
-    navCont.classList.replace("navbar", "navbar-scroll");
+    navCont.classList.replace("navbar", "navbar-scroll"); 
     wrapper.classList.replace("wrapper","wrapper-scroll")
 
 
@@ -88,7 +88,7 @@ exit.addEventListener('click', function () {
 
 })
 
-
+/* */
 
 
 
