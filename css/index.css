@@ -536,7 +536,7 @@ input[type="submit"]:hover{
                 
                                     font-size: 15px;
                                     color: white;
-                                    text-align: justify;
+                                    text-align:justify;
                                 }
                 .c_services{
                     display: flex;
