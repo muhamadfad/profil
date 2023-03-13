@@ -80,7 +80,8 @@ html {
 .container3 h1{
     text-align: left;
 }
-.container2 h1,.container3 h1,.container4 h1,.container6 h1{
+.container2 h1,.container3 h1,.container4 h1,.container5 h1,.container6 h1{
+    
     
     font-size: 40px;
     color: rgba(237, 224, 108, 1);
@@ -268,13 +269,64 @@ a{
     background-color: rgb(168, 168, 168);
 }
 
+.container5{
+    font-family: 'Courier Prime', Courier, monospace;
+    padding: 10px;
+}
+.container5 h1{
+    font-family: 'Courier Prime', Courier, monospace;
+    text-align: center;
+}
 
-
+.photo_services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.bx_services{
+    margin: 10px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(92, 92, 92, 0.475);
+    padding: 10px;
+   
+}
+.name_services{
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.bx_services p{
+    text-align: center;
+}
+.desc_services{
+    color: white;
+    font-size: 15px;
+}
+.photo_services img{
+    max-width: 100px;
+    max-height: 100px;
+    object-position: center;
+    object-fit: cover;
+    max-width: 100px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+}
 .container6{
     margin-top: 50px;
     padding: 10px;
 
 }
+
 
 .container6 h1 {
     font-family: 'Courier Prime', Courier, monospace;
@@ -382,6 +434,10 @@ input[type="submit"]:hover{
                     display: flex;
                     justify-content: center;
                 }
+        .con_services {
+            display: flex;
+            justify-content: center;
+        }
     .contact{
         display: flex;
         justify-content: center;
@@ -453,8 +509,9 @@ input[type="submit"]:hover{
     
         }
                 .container2 h1,
-                .container3 h1 {
-                   
+                .container3 h1,
+                .container5 h1 {
+                
         
                     font-size: 30px;
                     color: rgba(237, 224, 108, 1);
@@ -481,6 +538,10 @@ input[type="submit"]:hover{
                                     color: white;
                                     text-align: justify;
                                 }
+                .c_services{
+                    display: flex;
+                    justify-content: center;
+                }
                 .contact .card_message,
                 .contact .details_contact {
                     
