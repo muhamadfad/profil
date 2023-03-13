@@ -286,7 +286,7 @@ a{
 }
 .bx_services{
     margin: 10px;
-    width: 350px;
+    
     height: 400px;
     background-color: rgba(92, 92, 92, 0.475);
     padding: 10px;
@@ -434,10 +434,14 @@ input[type="submit"]:hover{
                     display: flex;
                     justify-content: center;
                 }
+        
         .con_services {
             display: flex;
             justify-content: center;
         }
+                .bx_services {
+                    width: 350px;
+                }
     .contact{
         display: flex;
         justify-content: center;
