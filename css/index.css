@@ -196,6 +196,7 @@ div .name {
 }
 .apps_logo{
     width: 80px;
+    
 }
 .apps_logo img{
     width: 100%;
@@ -492,7 +493,9 @@ input[type="submit"]:hover{
         }
     .apps_logo {
             width: 50px;
+            margin: 10px;
         }
+
     .img_home img {
          
             width: 100%;
@@ -596,6 +599,7 @@ input[type="submit"]:hover{
     border: rgb(111, 111, 111) solid 0.1px;
 }
 .timer_change {
+    font-family: 'Courier New', Courier, monospace;
     transition: 0.5s;
     opacity: 0;
     -webkit-transition: 0.5s;
