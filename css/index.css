@@ -4,19 +4,95 @@
     padding: 0;
     margin: 0;
 }
+html{
+    height: 100%;
+}
 body{
     padding: 0;
         margin: 0;
         background-color: rgba(51, 50, 50, 1);
+        height: 100%;
 }
 html {
     scroll-behavior: smooth;
 }
 .container{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 
     width: 100%;
-    height: 650px;
+    min-height: 100%;
+        background-attachment: fixed;
+        object-fit: cover;
+        object-position: center;
+        background: linear-gradient(45deg, #ff6b6b, #3a1c71, #ffdd00, #8ae600, #06c6ff);
+        background-size: 200% 200%;
+        animation: gradientAnimation 10s ease infinite;
+}
+.card_top{
+    
+    background-image: url(../images/muhamad_fadli.png) ;
+    
+    background-position: center;
+    background-position-y: bottom;
+    background-size:950px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    object-position: center;
+}
+@media screen and (max-width:540px){
+    .card_top {
+    
+            background-image: url(../images/muhamad_fadli.png);
+    
+            background-position: center;
+            background-position-y: bottom;
+            background-size: 800px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            object-fit: cover;
+            object-position: center;
+        }
+}
+.card_top_content{
+    font-family: 'Poppins';
+        color: white;
+        position: absolute;
+        background-color: rgba(82, 81, 81, 0.318);
+    
+        z-index: 1;
+        width: 100%;
+        min-height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+}
+.bg_linear{
+    
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 .img_home{
     display: flex;
@@ -49,8 +125,8 @@ html {
    
     z-index: 1;
     width: 100%;
-    height: 650px;
-    background-color: rgba(75, 70, 70, 0.676);
+    height: 100%;
+    background-color: rgba(75, 70, 70, 0.338);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -203,13 +279,33 @@ div .name {
 }
 .container4{
    
-    background-color: rgba(51, 50, 50, 1);
+    background-image: linear-gradient(to bottom, rgba(51, 50, 50, 0.42), rgba(51, 50, 50, 0.511)),url(../images/container4.jpg);
+    background-size: 400px;
+    background-position: center;
+    background-attachment: fixed;
+   
+    
+    
+    min-height: 100%;
 }
 .container4 {
     margin-top: 50px;
     margin-bottom: 100px;
     padding: 30px;
 
+}
+@media screen and (min-width:920px) {
+    .container4 {
+    
+            background-image: linear-gradient(to bottom, rgba(51, 50, 50, 0.42), rgba(51, 50, 50, 0.511)), url(../images/container4.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+    
+    
+            min-height: 100%;
+        }
 }
 .container4 h1{
     font-family: 'Courier Prime', Courier, monospace;
@@ -271,6 +367,7 @@ a{
 }
 
 .container5{
+   
     font-family: 'Courier Prime', Courier, monospace;
     padding: 10px;
 }
