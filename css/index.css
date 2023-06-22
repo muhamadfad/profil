@@ -24,7 +24,7 @@ html {
         background-attachment: fixed;
         object-fit: cover;
         object-position: center;
-      
+    
 }
 .card_top{
     
@@ -38,20 +38,7 @@ html {
     object-fit: cover;
     object-position: center;
 }
-@media screen and (max-width:540px){
-    .card_top {
-    
-            background-image: url(../images/muhamad_fadli.png);
-    
-            background-position: center;
-            background-position-y: bottom;
-            background-size: 800px;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            object-fit: cover;
-            object-position: center;
-        }
-}
+
 .card_top_content{
     font-family: 'Poppins';
         color: white;
@@ -68,7 +55,9 @@ html {
         align-content: center;
         text-align: center;
 }
-
+.bg_linear{
+    
+}
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
@@ -745,4 +734,4 @@ input[type="submit"]:hover{
 .bxt2 {
     padding: 10px;
     text-align: center;
-} 
+}
