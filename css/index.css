@@ -24,9 +24,7 @@ html {
         background-attachment: fixed;
         object-fit: cover;
         object-position: center;
-        background: linear-gradient(45deg, #ff6b6b, #3a1c71, #ffdd00, #8ae600, #06c6ff);
-        background-size: 200% 200%;
-        animation: gradientAnimation 10s ease infinite;
+      
 }
 .card_top{
     
@@ -70,9 +68,7 @@ html {
         align-content: center;
         text-align: center;
 }
-.bg_linear{
-    
-}
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
