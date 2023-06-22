@@ -24,7 +24,9 @@ html {
         background-attachment: fixed;
         object-fit: cover;
         object-position: center;
-    
+        background: linear-gradient(45deg, #ff6b6b, #3a1c71, #ffdd00, #8ae600, #06c6ff);
+        background-size: 200% 200%;
+        animation: gradientAnimation 10s ease infinite;
 }
 .card_top{
     
@@ -38,7 +40,21 @@ html {
     object-fit: cover;
     object-position: center;
 }
-
+@media screen and (max-width:540px){
+    .card_top {
+    
+            background-image: url(../images/muhamad_fadli.png);
+    /*
+    */
+            background-position: center;
+            background-position-y: bottom;
+            background-size: 800px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            object-fit: cover;
+            object-position: center;
+        }
+}
 .card_top_content{
     font-family: 'Poppins';
         color: white;
