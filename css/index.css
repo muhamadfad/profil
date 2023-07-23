@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -10,13 +12,16 @@ html{
 body{
     padding: 0;
         margin: 0;
-        background-color: rgba(51, 50, 50, 1);
-        height: 100%;
+    background-color: #F5EFE7;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
 }
 .container{
+    z-index: 2;
     background-color: rgba(255, 255, 255, 0);
 
     width: 100%;
@@ -24,7 +29,7 @@ html {
         background-attachment: fixed;
         object-fit: cover;
         object-position: center;
-        background: linear-gradient(45deg, #ff6b6b, #3a1c71, #ffdd00, #8ae600, #06c6ff);
+        background: linear-gradient(45deg, #FC5404, #F98404, #F9B208, #F7FD04,#b2fd04,#d8fd04,#F7FD04);
         background-size: 200% 200%;
         animation: gradientAnimation 10s ease infinite;
 }
@@ -56,20 +61,51 @@ html {
         }
 }
 .card_top_content{
+    
     font-family: 'Poppins';
         color: white;
-        position: absolute;
+        
         background-color: rgba(82, 81, 81, 0.318);
     
         z-index: 1;
         width: 100%;
         min-height: 100%;
+        height: 100%;
         
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
-        text-align: center;
+        
+        padding: 20px;
+}
+.scroll{
+    font-size: 18px;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    padding: 5px 5px 5px 0px;
+    transition: 0.4s;
+    
+}
+.scroll:hover{
+    padding: 5px 5px 5px 10px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background-color: #59595a46;
+    backdrop-filter: blur(10px);
+}
+.rocket{
+    background-color: #fefefe;
+    color: black;
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .bg_linear{
     
@@ -120,8 +156,8 @@ html {
 
 }
 .card_top{
-    font-family: 'Poppins';
-    color: white;
+    font-family: 'Playfair Display';
+    color: rgb(145, 134, 40);
     position: absolute;
    
     z-index: 1;
@@ -147,8 +183,12 @@ html {
 
 }
 .container2{
-    font-family: 'Courier Prime', Courier, monospace;
-    background-color: rgba(51, 50, 50, 1);
+    z-index: 2;
+    font-family: 'Playfair Display';
+    z-index: 2;
+        position: relative;
+        background-color: #f5efe78c;
+        backdrop-filter: blur(10px);
 
 }
 .container2 h1{
@@ -157,17 +197,22 @@ html {
 .container3 h1{
     text-align: left;
 }
-.container2 h1,.container3 h1,.container4 h1,.container5 h1,.container6 h1{
+.container2 h1,.container3 h1,.container5 h1,.container6 h1{
     
     
     font-size: 40px;
-    color: rgba(237, 224, 108, 1);
+    color: rgb(145, 134, 40);
     margin-bottom: 20px;
+}
+.container4 h1{
+    font-size: 40px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
 }
 .container2 .text,.container3 p{
     
     font-size: 18px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: justify;
 }
 .container2 p{
@@ -179,8 +224,12 @@ html {
 .container2 img,.box2 img{
     width: 80%;
     
-  
+
    
+}
+
+.bx_services:hover{
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.252);
 }
 
 .decor_img_2 {
@@ -198,11 +247,15 @@ html {
     display: flex;
         flex-wrap: wrap;
         align-content: center;
-        height: 600px;
+        min-height: 100%;
+        
 }
 .container3{
-    font-family: 'Courier Prime', Courier, monospace;
-        background-color: rgba(51, 50, 50, 1);
+    font-family: 'Playfair Display';
+    z-index: 2;
+    position: relative;
+    background-color: #f5efe78c;
+    backdrop-filter: blur(10px);
 }
 .container3 .box2 {
     justify-content: center;
@@ -215,9 +268,12 @@ html {
     margin-top: 30px;
     text-align: left;
     font-size: 30px;
-        color: rgba(237, 224, 108, 1);
+        color: rgb(145, 134, 40);
         margin-bottom: 20px;
 
+}
+.container3 p{
+    color: black;
 }
 
 
@@ -279,13 +335,15 @@ div .name {
     width: 100%;
 }
 .container4{
+    z-index: 2;
    
     background-image: linear-gradient(to bottom, rgba(51, 50, 50, 0.42), rgba(51, 50, 50, 0.511)),url(../images/container4.jpg);
     background-size: 400px;
     background-position: center;
     background-attachment: fixed;
+    backdrop-filter: blur(10px);
+
    
-    
     
     min-height: 100%;
 }
@@ -303,13 +361,14 @@ div .name {
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            backdrop-filter: blur(10px);
     
     
             min-height: 100%;
         }
 }
 .container4 h1{
-    font-family: 'Courier Prime', Courier, monospace;
+    font-family: 'Playfair Display';
     text-align: center;
 }
 
@@ -335,6 +394,7 @@ div .name {
     width: 300px;
     height: 350px;
     background-color: rgba(237, 224, 108, 0.513);
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -368,12 +428,22 @@ a{
 }
 
 .container5{
+    min-height: 100%;
+    
    
-    font-family: 'Courier Prime', Courier, monospace;
+    font-family: 'Playfair Display';
     padding: 10px;
+    
+    z-index: 2;
+        position: relative;
+        background-color: #f5efe78c;
+        backdrop-filter: blur(10px);
+
 }
 .container5 h1{
-    font-family: 'Courier Prime', Courier, monospace;
+    
+    
+    font-family: 'Playfair Display';
     text-align: center;
 }
 
@@ -421,26 +491,31 @@ a{
         justify-content: center;
 }
 .container6{
-    margin-top: 50px;
+    z-index: 2;
+        position: relative;
+        background-color: #f5efe78c;
+        backdrop-filter: blur(10px);
+    
     padding: 10px;
 
 }
 
 
 .container6 h1 {
-    font-family: 'Courier Prime', Courier, monospace;
+    margin-top: 50px;
+    font-family: 'Playfair Display';
     text-align: center;
 
 }
 .container6 h2 {
-    font-family: 'Courier Prime', Courier, monospace;
-    color: white;
+    font-family: 'Playfair Display';
+    color: rgb(145, 134, 40);
     font-weight: lighter;
     font-size: 22px;
 
 }
 .contact{
-    font-family: 'Courier Prime', Courier, monospace;
+    font-family: 'Playfair Display';
     
 }
 .contact .card_message{
@@ -515,13 +590,19 @@ input[type="submit"]:hover{
             display: flex;
         }
     
-        .container2 .box1, .container2 .box2,.container3 .box1,
+        .container3 .box1,
         .container3 .box2{
             
             width: 50%;
             padding: 100px 20px 20px 20px;
 
         }
+                .container2 .box1{
+                width: 45%;
+                }
+                                .container2 .box2 {
+                                    width: 55%;
+                                }
         
                 .container2 img,.box2 img {
                     width: 350px;
@@ -599,18 +680,24 @@ input[type="submit"]:hover{
             width: 100%;
 
         }
+        .card_top{
+            text-align: left;
+        }
         .card_top .hello {
             font-size: 25px;
+            line-height:80px;
     
         }
     
         .card_top .name {
             font-size: 50px;
             font-weight: 600;
+            line-height: 50px;
         }
     
         .card_top .desc {
             font-size: 15px;
+            line-height: 90px;
     
         }
                 .container2 h1,
@@ -640,7 +727,7 @@ input[type="submit"]:hover{
                                 .container3 p {
                 
                                     font-size: 15px;
-                                    color: white;
+                                    color: rgb(0, 0, 0);
                                     text-align:justify;
                                 }
                 .c_services{
@@ -750,4 +837,148 @@ input[type="submit"]:hover{
 .bxt2 {
     padding: 10px;
     text-align: center;
+}
+
+.circle-1{
+    z-index: 1;
+    top: 700px;
+    left: -150px;
+    position: absolute;
+    background-color: #F98404;
+    background-image: radial-gradient(#F98404,#F98404, white);
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    -ms-border-radius: 300px;
+    -o-border-radius: 300px;
+    box-shadow: 20px 20px 150px #FC5404 ;
+}
+.circle-2 {
+    z-index: 1;
+    top: 1000px;
+    right: -100px;
+    position: absolute;
+    background-color: #F98404;
+    background-image: radial-gradient(#F98404,  white);
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    box-shadow: 20px 20px 50px #fc5304a2;
+}
+.circle-3 {
+    z-index: 1;
+    top: 2300px;
+    right: -100px;
+    position: absolute;
+    background-color: #F98404;
+    background-image: radial-gradient(#F98404, white);
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    box-shadow: 20px 20px 50px #fc5304a2;
+}
+.circle-4 {
+    z-index: 1;
+    top: 2600px;
+    left: 10%;
+    position: absolute;
+    background-color: #F98404;
+    background-image: radial-gradient(#F98404, #F98404, white);
+    width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        -webkit-border-radius: 300px;
+        -moz-border-radius: 300px;
+        -ms-border-radius: 300px;
+        -o-border-radius: 300px;
+        box-shadow: 0px 0px 150px #FC5404;
+}
+.circle-5 {
+    z-index: 1;
+    top: 3600px;
+    right: 10%;
+    position: absolute;
+    background-color: #F98404;
+    background-image: radial-gradient(#F98404, #F98404, white);
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    -ms-border-radius: 300px;
+    -o-border-radius: 300px;
+    box-shadow: 0px 0px 150px #FC5404;
+}
+.circle-6 {
+    z-index: 1;
+    top: 4000px;
+    left: 5%;
+    position: absolute;
+    background-color: #F98404;
+    background-image: radial-gradient(#F98404, white);
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    box-shadow: 0px 0px 50px #fc5304a2;
+}
+
+@media screen and (max-width:560px) {
+    
+    .circle-2{
+        transition: 0.5s;
+        top: 1500px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+}
+.circle-3 {
+    transition: 0.5s;
+    top: 3600px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.circle-4 {
+    transition: 0.5s;
+    top: 4600px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    left: -100px;
+}
+.circle-5 {
+    transition: 0.5s;
+    top: 5500px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    right: -100px;
+}
+.circle-6 {
+    transition: 0.5s;
+    top: 6300px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    left: 5%;
+}
 }
