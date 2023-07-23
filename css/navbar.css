@@ -144,6 +144,7 @@ nav .brand a {
     bottom: 0;
     width: 100%;
     position: fixed;
+    z-index: 4;
     background: rgba(0, 0, 0, .1);
     transition: .3s;
     visibility: hidden;
