@@ -183,10 +183,9 @@ html {
 
 }
 .container2{
-    z-index: 2;
+    
     font-family: 'Playfair Display';
-    z-index: 2;
-        position: relative;
+    
         background-color: #f5efe78c;
         backdrop-filter: blur(10px);
 
@@ -252,8 +251,7 @@ html {
 }
 .container3{
     font-family: 'Playfair Display';
-    z-index: 2;
-    position: relative;
+    
     background-color: #f5efe78c;
     backdrop-filter: blur(10px);
 }
@@ -335,13 +333,13 @@ div .name {
     width: 100%;
 }
 .container4{
-    z-index: 2;
+   
    
     background-image: linear-gradient(to bottom, rgba(51, 50, 50, 0.42), rgba(51, 50, 50, 0.511)),url(../images/container4.jpg);
     background-size: 400px;
     background-position: center;
     background-attachment: fixed;
-    backdrop-filter: blur(10px);
+    
 
    
     
@@ -434,8 +432,7 @@ a{
     font-family: 'Playfair Display';
     padding: 10px;
     
-    z-index: 2;
-        position: relative;
+    
         background-color: #f5efe78c;
         backdrop-filter: blur(10px);
 
@@ -491,8 +488,7 @@ a{
         justify-content: center;
 }
 .container6{
-    z-index: 2;
-        position: relative;
+   
         background-color: #f5efe78c;
         backdrop-filter: blur(10px);
     
@@ -839,146 +835,3 @@ input[type="submit"]:hover{
     text-align: center;
 }
 
-.circle-1{
-    z-index: 1;
-    top: 700px;
-    left: -150px;
-    position: absolute;
-    background-color: #F98404;
-    background-image: radial-gradient(#F98404,#F98404, white);
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    -webkit-border-radius: 300px;
-    -moz-border-radius: 300px;
-    -ms-border-radius: 300px;
-    -o-border-radius: 300px;
-    box-shadow: 20px 20px 150px #FC5404 ;
-}
-.circle-2 {
-    z-index: 1;
-    top: 1000px;
-    right: -100px;
-    position: absolute;
-    background-color: #F98404;
-    background-image: radial-gradient(#F98404,  white);
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
-    box-shadow: 20px 20px 50px #fc5304a2;
-}
-.circle-3 {
-    z-index: 1;
-    top: 2300px;
-    right: -100px;
-    position: absolute;
-    background-color: #F98404;
-    background-image: radial-gradient(#F98404, white);
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
-    box-shadow: 20px 20px 50px #fc5304a2;
-}
-.circle-4 {
-    z-index: 1;
-    top: 2600px;
-    left: 10%;
-    position: absolute;
-    background-color: #F98404;
-    background-image: radial-gradient(#F98404, #F98404, white);
-    width: 300px;
-        height: 300px;
-        border-radius: 300px;
-        -webkit-border-radius: 300px;
-        -moz-border-radius: 300px;
-        -ms-border-radius: 300px;
-        -o-border-radius: 300px;
-        box-shadow: 0px 0px 150px #FC5404;
-}
-.circle-5 {
-    z-index: 1;
-    top: 3600px;
-    right: 10%;
-    position: absolute;
-    background-color: #F98404;
-    background-image: radial-gradient(#F98404, #F98404, white);
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    -webkit-border-radius: 300px;
-    -moz-border-radius: 300px;
-    -ms-border-radius: 300px;
-    -o-border-radius: 300px;
-    box-shadow: 0px 0px 150px #FC5404;
-}
-.circle-6 {
-    z-index: 1;
-    top: 4000px;
-    left: 5%;
-    position: absolute;
-    background-color: #F98404;
-    background-image: radial-gradient(#F98404, white);
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
-    box-shadow: 0px 0px 50px #fc5304a2;
-}
-
-@media screen and (max-width:560px) {
-    
-    .circle-2{
-        transition: 0.5s;
-        top: 1500px;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -ms-transition: 0.5s;
-        -o-transition: 0.5s;
-}
-.circle-3 {
-    transition: 0.5s;
-    top: 3600px;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-.circle-4 {
-    transition: 0.5s;
-    top: 4600px;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    left: -100px;
-}
-.circle-5 {
-    transition: 0.5s;
-    top: 5500px;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    right: -100px;
-}
-.circle-6 {
-    transition: 0.5s;
-    top: 6300px;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    left: 5%;
-}
-}
