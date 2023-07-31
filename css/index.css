@@ -8,11 +8,13 @@
 }
 html{
     height: 100%;
+    max-width: 100%;
 }
 body{
+    
     padding: 0;
         margin: 0;
-    background-color: #F5EFE7;
+    background-color: #191919;
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -21,25 +23,26 @@ html {
     scroll-behavior: smooth;
 }
 .container{
-    z-index: 2;
+    
+    
     background-color: rgba(255, 255, 255, 0);
 
-    width: 100%;
+    max-width: 100%;
     min-height: 100%;
         background-attachment: fixed;
         object-fit: cover;
         object-position: center;
-        background: linear-gradient(45deg, #FC5404, #F98404, #F9B208, #F7FD04,#b2fd04,#d8fd04,#F7FD04);
+        background: linear-gradient(45deg, #2A0944, #3B185F, #A12568, #FEC260,#A12568,#3B185F,#2A0944);
         background-size: 200% 200%;
         animation: gradientAnimation 10s ease infinite;
 }
 .card_top{
     
-    background-image: url(../images/muhamad_fadli.png) ;
-    
+    background-image: url(../images/fadli4.png) ;
+    max-width: 100%;
     background-position: center;
     background-position-y: bottom;
-    background-size:950px;
+    background-size:400px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
@@ -48,12 +51,12 @@ html {
 @media screen and (max-width:540px){
     .card_top {
     
-            background-image: url(../images/muhamad_fadli.png);
+            background-image: url(../images/fadli4.png);
     /*
     */
             background-position: center;
             background-position-y: bottom;
-            background-size: 800px;
+            background-size: 350px;
             background-repeat: no-repeat;
             background-attachment: fixed;
             object-fit: cover;
@@ -184,9 +187,10 @@ html {
 }
 .container2{
     
+    
     font-family: 'Playfair Display';
     
-        background-color: #f5efe78c;
+        background-color: #191919;
         backdrop-filter: blur(10px);
 
 }
@@ -211,7 +215,7 @@ html {
 .container2 .text,.container3 p{
     
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: justify;
 }
 .container2 p{
@@ -228,7 +232,7 @@ html {
 }
 
 .bx_services:hover{
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.252);
+    box-shadow: 0px 0px 40px rgba(248, 248, 248, 0.411);
 }
 
 .decor_img_2 {
@@ -251,8 +255,10 @@ html {
 }
 .container3{
     font-family: 'Playfair Display';
-    
-    background-color: #f5efe78c;
+    position: relative;
+        z-index: 2;
+   
+    background-color: #191919;
     backdrop-filter: blur(10px);
 }
 .container3 .box2 {
@@ -271,7 +277,7 @@ html {
 
 }
 .container3 p{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -281,7 +287,7 @@ html {
 }
 .co{
     width: 10px;
-    background-color: aqua;
+    background-color: #191919;
     overflow: hidden;
 }
 
@@ -333,21 +339,21 @@ div .name {
     width: 100%;
 }
 .container4{
-   
+    z-index: 2;
    
     background-image: linear-gradient(to bottom, rgba(51, 50, 50, 0.42), rgba(51, 50, 50, 0.511)),url(../images/container4.jpg);
     background-size: 400px;
     background-position: center;
     background-attachment: fixed;
-    
+    backdrop-filter: blur(10px);
 
    
     
     min-height: 100%;
 }
 .container4 {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    
+    
     padding: 30px;
 
 }
@@ -427,13 +433,18 @@ a{
 
 .container5{
     min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     
    
     font-family: 'Playfair Display';
     padding: 10px;
     
-    
-        background-color: #f5efe78c;
+   
+        background-color: #191919;
         backdrop-filter: blur(10px);
 
 }
@@ -453,10 +464,22 @@ a{
 .bx_services{
     margin: 10px;
     
-    height: 400px;
+    height: 230px;
+    width: 200px;
     background-color: rgba(92, 92, 92, 0.475);
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
    
+}
+
+.bx_services i{
+    font-size: 50px;
+}
+.bx_services p{
+    line-height: 40px;
 }
 .name_services{
     font-family: 'Courier New', Courier, monospace;
@@ -488,8 +511,8 @@ a{
         justify-content: center;
 }
 .container6{
-   
-        background-color: #f5efe78c;
+    
+        background-color: #191919;
         backdrop-filter: blur(10px);
     
     padding: 10px;
@@ -585,6 +608,7 @@ input[type="submit"]:hover{
         padding: 30px;
             display: flex;
         }
+
     
         .container3 .box1,
         .container3 .box2{
@@ -615,9 +639,7 @@ input[type="submit"]:hover{
             display: flex;
             justify-content: center;
         }
-                .bx_services {
-                    width: 350px;
-                }
+                
     .contact{
         display: flex;
         justify-content: center;
@@ -658,10 +680,14 @@ input[type="submit"]:hover{
         .container3 .box2{
             margin-top: 50px;
         }
-                
+           
                
 }
 @media screen and (max-width:560px) {
+    .container3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     .cpp {
             width: 40px;
@@ -703,7 +729,6 @@ input[type="submit"]:hover{
         
                     font-size: 30px;
                     color: rgb(145, 134, 40);
-                    
                     margin-bottom: 20px;
                 }
                  .container3 h2 {
@@ -724,7 +749,7 @@ input[type="submit"]:hover{
                                 .container3 p {
                 
                                     font-size: 15px;
-                                    color: rgb(0, 0, 0);
+                                    color: rgb(255, 255, 255);
                                     text-align:justify;
                                 }
                 .c_services{
@@ -836,3 +861,31 @@ input[type="submit"]:hover{
     text-align: center;
 }
 
+.circle-1{
+    background-color: #F98404;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 800px;
+    left: -150px;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    -ms-border-radius: 300px;
+    -o-border-radius: 300px;
+}
+.circle-2 {
+    background-color: #F98404;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 1200px;
+    right: -100px;
+    border-radius: 200px ;
+    -webkit-border-radius: 200px ;
+    -moz-border-radius: 200px ;
+    -ms-border-radius: 200px ;
+    -o-border-radius: 200px ;
+}
