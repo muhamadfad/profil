@@ -35,18 +35,27 @@ window.onscroll = function () {
 
 const navCont = document.getElementById("navbar");
 const wrapper = document.getElementById("wrapper");
+const bar1 = document.getElementById("bar1")
+const bar3 = document.getElementById("bar3")
 
 // buat function scroll
 function scroll() {
   let calc = window.scrollY;
   if (calc > 0) {
    
-    wrapper.classList.replace("wrapper","wrapper-scroll")
+    wrapper.classList.replace("wrapper", "wrapper-scroll")
+    document.getElementById("bar1").style.backgroundColor = "rgb(145, 134, 40)";
+    document.getElementById("bar3").style.backgroundColor = "rgb(145, 134, 40)";
+    document.getElementById("option").classList.add("option");
 
 
   } else if (calc <= 0) {
     
-    wrapper.classList.replace("wrapper-scroll","wrapper")
+    wrapper.classList.replace("wrapper-scroll", "wrapper")
+    document.getElementById("bar1").style.backgroundColor = "white";
+    document.getElementById("bar3").style.backgroundColor = "white";
+    document.getElementById("option").classList.remove("option");
+    
 
   }
 }
@@ -80,15 +89,21 @@ cols.addEventListener('change', function (cols) {
 });
 
 
-const exit = document.getElementById("exit")
-const timer = document.getElementById("timer")
-exit.addEventListener('click', function () { 
-   timer.classList.replace("timer", "timer_change");
 
-
-})
 
 /* */
+
+ // Fungsi untuk meng-handle submit form
+  function handleFormSubmit(event) {
+    event.preventDefault(); // Menghentikan default behavior form submit
+
+    // Gantikan URL dibawah ini dengan URL halaman tujuan setelah submit
+    const redirectURL = "http://www.fadlicode.online/"; 
+
+    window.location.href = redirectURL; // Redirect ke halaman tujuan
+  }
+
+
 
 
 
