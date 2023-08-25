@@ -2,12 +2,7 @@
 body{
   font-family: 'Inter';
 }
-html,
-body {
-  scroll-behavior: smooth;
-  overscroll-behavior: auto;
-  /* Atau 'contain' */
-}
+
 .box-circle {
   min-width: 100%;
   min-height: 100%;
