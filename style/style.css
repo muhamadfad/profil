@@ -2,6 +2,12 @@
 body{
   font-family: 'Inter';
 }
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+  /* Atau 'contain' */
+}
 .box-circle {
   min-width: 100%;
   min-height: 100%;
@@ -18,12 +24,8 @@ body{
 }
 .navWrapper-scroll{
     transition: 0.1s;
-    background-color: rgba(255, 255, 255, 0.541);
-    backdrop-filter: blur(10px);
-    -webkit-transition: 0.1s;
-    -moz-transition: 0.1s;
-    -ms-transition: 0.1s;
-    -o-transition: 0.1s;
+    background-color: rgba(255, 255, 255, 0.863);
+    
     border-bottom: 1px rgb(212, 0, 255) solid;
 }
 .image-size {
